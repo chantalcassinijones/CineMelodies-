@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import "./Hero.css";
 
 const Hero = () => {
   return (
     
-    <div className="text-center">
-    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-    Diving in the World of Movies and Sounds
+    <div className="hero-container text-center">
+    <h1 className="font-bold tracking-tight text-gray-900 pt-5 sm:text-4xl">
+    Your guide to the world of movies and sounds
     </h1>
     <p className="mt-6 text-lg leading-8 text-gray-600">
-      Enter your search below
+     
     </p>
     <div className="mt-10 flex items-center justify-center gap-x-6">
       <form>
