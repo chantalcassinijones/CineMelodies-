@@ -6,12 +6,18 @@ import CardGallery from "./components/CardGallery/CardGallery";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <CardGallery heading="This is a gallery heading" />
-      <Footer />
-    </>
+    <div class="app-container">
+      <header>
+        <Navbar />
+        <Hero />
+      </header>
+      <main>
+        <CardGallery heading="This is a gallery heading" />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }
 
