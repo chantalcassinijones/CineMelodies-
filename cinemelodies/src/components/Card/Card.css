@@ -1,0 +1,10 @@
+/* This is just to define the basic component shape */
+/* This can be changed/added to with Tailwind */
+
+.card-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    margin: 5px;
+    border: 1px solid black;
+}

@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <CardGallery />
+      <CardGallery heading="This is a gallery heading" />
       <Footer />
     </>
   );
