@@ -1,0 +1,23 @@
+/* This is just to define the basic component shape */
+/* This can be changed/added to with Tailwind */
+
+.hero-container {
+    border: 1px solid lightgrey;
+    padding-bottom: 30px;
+}
+
+input {
+    border: 1px solid lightgray;
+    height: 35px;
+    padding: 5px;
+    width: 400px;
+}
+
+button {
+    height: 35px;
+    border: 1px solid lightgray;
+    margin-left: 10px;
+    width: 75px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

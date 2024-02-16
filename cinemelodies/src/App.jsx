@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
@@ -6,9 +7,9 @@ import CardGallery from "./components/CardGallery/CardGallery";
 
 function App() {
   return (
-    <div class="app-container">
+    <div className="app-container">
       <header>
-        <Navbar />
+        <Header />
         <Hero />
       </header>
       <main>
