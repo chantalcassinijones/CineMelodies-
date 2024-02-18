@@ -1,8 +1,10 @@
 import React from 'react';
-
+import "./Navbar.css"
 const Navbar = () => {
   return (
-    <nav className="bg-yellow-500">
+    
+    <nav className="navbar bg-yellow-700">
+      <div className="logo"><img src="path/to/your/logo.png" alt="Logo" className="h-8 w-auto" /></div>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center h-16">
         <div className="flex-shrink-0">
@@ -21,3 +23,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
