@@ -29,7 +29,7 @@ function App() {
       </header>
       <main>
         <Api />
-        <MovieInfo {...testData} /> {/* Passing the object as props using ...spread */}
+         {/* <MovieInfo {...testData} /> {/* Passing the object as props using ...spread */}
         <CardGallery heading="This is a gallery heading" />
       </main>
       <footer>
