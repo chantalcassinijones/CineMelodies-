@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import CardGallery from "./components/CardGallery/CardGallery";
+import Api from "./Api";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
       </header>
       <main>
+        <Api />
         <CardGallery heading="This is a gallery heading" />
       </main>
       <footer>
