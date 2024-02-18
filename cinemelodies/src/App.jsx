@@ -3,10 +3,8 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import CardGallery from "./components/CardGallery/CardGallery";
-
-import Api from "./Api";
-
 import MovieInfo from "./components/MovieInfo/MovieInfo";
+import MovieContainer from "./components/MovieContainer/MovieContainer";
 
 // /* Test object - to be deleted later - should match TMDB properties */
 // let testData = {
@@ -28,7 +26,7 @@ function App() {
         <Hero />
       </header>
       <main>
-        <Api />
+       <MovieContainer />
          {/* <MovieInfo {...testData} /> {/* Passing the object as props using ...spread */}
         <CardGallery heading="This is a gallery heading" />
       </main>
