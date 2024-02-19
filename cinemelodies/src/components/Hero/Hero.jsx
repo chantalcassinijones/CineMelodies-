@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     
     <div className="hero-container text-center">
-    <h1 className="font-bold tracking-tight text-green-700 pt-5 sm:text-4xl">
+    <h1 className="font-bold tracking-tight pt-5 sm:text-4xl">
     Your guide to the world of movies and sounds
     </h1>
     <p className="mt-6 text-lg leading-8 text-gray-600">
