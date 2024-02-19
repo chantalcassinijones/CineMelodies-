@@ -97,6 +97,7 @@ const MovieContainer = () => {
           </div>
         </div>
       </div>
+
       <div className="moviesContainer">
         <div>
           <h2 className="text-left text-2xl font-bold mb-4">Team Favourites</h2>
