@@ -91,7 +91,6 @@ const MovieContainer = () => {
                 <span className="movieDate font-bold mb-4">
                  {parseFloat(movie.release_date).toFixed(0)}
                 </span>
-                <p className="movieDescription">{movie.overview}</p>
               </div>
             ))}
           </div>
