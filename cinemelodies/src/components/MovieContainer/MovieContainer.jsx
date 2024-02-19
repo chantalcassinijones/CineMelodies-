@@ -43,8 +43,7 @@ const MovieContainer = () => {
                 <span className="movieDate font-bold mb-4">
                  {parseFloat(movie.release_date).toFixed(0)}
                 </span>
-                
-              </div>
+                      </div>
             ))}
           </div>
         </div>
@@ -65,11 +64,16 @@ const MovieContainer = () => {
                   alt={movie.title}
                   className="posterImage"
                 />
+                <span className="movieDate font-bold mb-4">
+                 {parseFloat(movie.release_date).toFixed(0)}
+                </span>
               </div>
             ))}
           </div>
         </div>
       </div>
+
+      
       <div className="moviesContainer">
         <div>
           <h2 className="text-left text-2xl font-bold mb-4">Magic</h2>
@@ -84,9 +88,9 @@ const MovieContainer = () => {
                   alt={movie.title}
                   className="posterImage"
                 />
-                <p className="text-center font-bold mb-4">
-                  Release Date: {movie.release_date}
-                </p>
+                <span className="movieDate font-bold mb-4">
+                 {parseFloat(movie.release_date).toFixed(0)}
+                </span>
                 <p className="movieDescription">{movie.overview}</p>
               </div>
             ))}
@@ -108,10 +112,9 @@ const MovieContainer = () => {
                   alt={movie.title}
                   className="posterImage"
                 />
-                <p className="text-center font-bold mb-4">
-                  Release Date: {movie.release_date}
-                </p>
-                <p className="movieDescription">{movie.overview}</p>
+               <span className="movieDate font-bold mb-4">
+                 {parseFloat(movie.release_date).toFixed(0)}
+                </span>
               </div>
             ))}
           </div>
