@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import MovieContainer from "./components/MovieContainer/MovieContainer";
 
+
 function App() {
   return (
     <div className="app-container">
