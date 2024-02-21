@@ -4,7 +4,7 @@
     height: 370px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 0 15px;
+    margin: 6px 5px;
     padding-bottom: 3px;
     text-align: center;
     font-size: 1rem;
@@ -59,7 +59,7 @@
   .movieDate {
     position: relative;
     text-align: center;
-    top: -29px;
+    top: -32px;
     left: 97px;
     padding: 3px;
     color: black;

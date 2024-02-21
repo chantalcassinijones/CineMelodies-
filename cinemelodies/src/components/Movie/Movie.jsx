@@ -1,4 +1,6 @@
 import React from "react";
+import "./Movie.css";
+import Placeholder from "./images/placeholder-250x370.svg";
 
 const Movie = ({ title, overview, posterPath, releaseDate }) => {
   // Log data to console
@@ -9,12 +11,12 @@ const Movie = ({ title, overview, posterPath, releaseDate }) => {
   return (
     <div className="singleMovie movieCard" onClick={handleClick}>
       <img
-        src={`https://image.tmdb.org/t/p/w500${posterPath}`}
+        src={posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : Placeholder}
         alt={title}
         className="posterImage"
       />
       <span className="movieDate font-bold mb-4">
-        {parseFloat(releaseDate).toFixed(0)}
+        { releaseDate? parseFloat(releaseDate).toFixed(0) : "N/A"}
       </span>
     </div>
   );
