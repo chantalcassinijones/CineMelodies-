@@ -34,16 +34,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.comedy.map((movie) => (
-              <div key={movie.id} className="movieCard">
-                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={movie.title}
-                  className="posterImage"
-                />
-                <span className="movieDate font-bold mb-4">
-                 {parseFloat(movie.release_date).toFixed(0)}
-                </span>
-                      </div>
+               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
             ))}
           </div>
         </div>
@@ -58,16 +49,8 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.fantasy.map((movie) => (
-              <div key={movie.id} className="movieCard">
-                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={movie.title}
-                  className="posterImage"
-                />
-                <span className="movieDate font-bold mb-4">
-                 {parseFloat(movie.release_date).toFixed(0)}
-                </span>
-              </div>
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
+           
             ))}
           </div>
         </div>
@@ -82,16 +65,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.magic.map((movie) => (
-              <div key={movie.id} className="movieCard">
-                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={movie.title}
-                  className="posterImage"
-                />
-                <span className="movieDate font-bold mb-4">
-                 {parseFloat(movie.release_date).toFixed(0)}
-                </span>
-              </div>
+               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
             ))}
           </div>
         </div>
@@ -106,16 +80,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.recommended.map((movie) => (
-              <div key={movie.id} className="movieCard">
-                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={movie.title}
-                  className="posterImage"
-                />
-               <span className="movieDate font-bold mb-4">
-                 {parseFloat(movie.release_date).toFixed(0)}
-                </span>
-              </div>
+               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
             ))}
           </div>
         </div>
