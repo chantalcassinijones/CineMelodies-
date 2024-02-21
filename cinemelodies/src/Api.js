@@ -1,10 +1,12 @@
 import axios from "axios";
 
+// Get movie data for 'Recommended'/home page
+
 const fetchMovieData = async () => {
   try {
     const apiKey = "440ab038ef5ec7e52ca1c5eceae992aa";
     const movieIds = {
-      comedy: [115, 620, 9486, 546554],
+      comedy: [105, 620, 9486, 546554],
       fantasy: [120, 2493, 411, 259316],
       magic: [1124, 671, 75656, 10439],
       recommended: [88, 744, 75612, 824],
