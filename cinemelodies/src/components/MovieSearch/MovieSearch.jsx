@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const MovieSearch = ({ onSearchResults }) => {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
-
+  const navigate = useNavigate()
   const handleSearch = (e) => {
     e.preventDefault();
     if (!query) {
@@ -18,6 +19,8 @@ const MovieSearch = ({ onSearchResults }) => {
           const results = response.data.results;
           setMovies(results);
           onSearchResults(results);
+          console.log(results)
+          navigate("/searchResultsPage")
         })
         .catch((error) => {
           console.log(error);
@@ -26,6 +29,7 @@ const MovieSearch = ({ onSearchResults }) => {
   };
 
   useEffect(() => {
+   
     console.log("movies:", movies)
   }, [movies])
 

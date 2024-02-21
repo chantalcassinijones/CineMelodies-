@@ -3,3 +3,8 @@
     padding: 0;
     margin: 0;
 }
+.footer-container {
+    background: radial-gradient(circle at 100% 80%, #4b9f46, #b7cb46, #4b9f46);
+    height: 80px;
+    border-bottom: 3px solid rgb(243, 198, 74) !important;
+}
