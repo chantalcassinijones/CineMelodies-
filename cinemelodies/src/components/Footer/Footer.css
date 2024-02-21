@@ -4,7 +4,7 @@
     margin: 0;
 }
 .footer-container {
-    background: radial-gradient(circle at 50% 80%, #189a17, #199616, #1a8c14, #1a7f11, #1a720e, #19690d, #19650c);
-    height: 250px;
-    border-bottom: 4px solid rgb(215, 203, 43) !important;
+    background: radial-gradient(circle at 100% 80%, #4b9f46, #b7cb46, #4b9f46);
+    height: 80px;
+    border-bottom: 3px solid rgb(243, 198, 74) !important;
 }
