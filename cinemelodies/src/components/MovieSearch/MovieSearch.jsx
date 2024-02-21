@@ -7,19 +7,22 @@ const MovieSearch = ({ onSearchResults }) => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-
-    axios
-      .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=440ab038ef5ec7e52ca1c5eceae992aa&query=${query}`
-      )
-      .then((response) => {
-        const results = response.data.results;
-        setMovies(results);
-        onSearchResults(results);
-             })
-      .catch((error) => {
-        console.log(error);
-      });
+    if (!query) {
+      alert("Please enter a search query!")
+    } else {
+      axios
+        .get(
+          `https://api.themoviedb.org/3/search/movie?api_key=440ab038ef5ec7e52ca1c5eceae992aa&query=${query}`
+        )
+        .then((response) => {
+          const results = response.data.results;
+          setMovies(results);
+          onSearchResults(results);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   useEffect(() => {
