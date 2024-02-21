@@ -21,7 +21,7 @@ function App() {
          </header>
       <main>
         {/* Condition rendering based on movieResults state */}
-        {movieResults ? <SearchResultsPage movies={movieResults} /> : <MovieContainer />}
+        {!movieResults ? <SearchResultsPage movies={movieResults} /> : <MovieContainer />}
              </main>
       <footer>
         <Footer />
