@@ -10,8 +10,7 @@ function App() {
     <div className="app-container">
       <header>
         <Header />
-        <Hero />
-      </header>
+         </header>
       <main>
         <MovieContainer />
       </main>
