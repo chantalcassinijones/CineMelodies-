@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const MovieSearch = () => {
+const MovieSearch = ({ onSearchResults }) => {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
 
@@ -13,12 +13,18 @@ const MovieSearch = () => {
         `https://api.themoviedb.org/3/search/movie?api_key=440ab038ef5ec7e52ca1c5eceae992aa&query=${query}`
       )
       .then((response) => {
-        setMovies(response.data.results);
-      })
+        const results = response.data.results;
+        setMovies(results);
+        onSearchResults(results);
+             })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  useEffect(() => {
+    console.log("movies:", movies)
+  }, [movies])
 
   return (
     <div>
@@ -31,29 +37,6 @@ const MovieSearch = () => {
         />
         <button type="submit">Go</button>
       </form>
-
-      <div className="moviesContainer">
-        {movies.map((movie) => (
-          <div key={movie.id} className="movieCard">
-            <img
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-              className="posterImage"
-            />
-            <div>
-              <h2 className="text-left text-2xl font-bold mb-4">
-                {movie.title}
-              </h2>
-              <p className="moviesContainer-description text-left">
-                {movie.overview}
-              </p>
-              <span className="movieDate font-bold mb-4">
-                {movie.release_date}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };
