@@ -3,7 +3,7 @@ import fetchMovieData from "../../Api";
 import Movie from "../Movie/Movie";
 import "./MovieContainer.css";
 
-const MovieContainer = () => {
+const MovieContainer = ({ setTitle }) => {
   const [movies, setMovies] = useState({
     comedy: [],
     fantasy: [],
@@ -34,7 +34,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.comedy.map((movie) => (
-               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} voteAverage={movie.vote_average} setTitle={setTitle} />
             ))}
           </div>
         </div>
@@ -49,7 +49,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.fantasy.map((movie) => (
-              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} overview={movie.overview} voteAverage={movie.vote_average} setTitle={setTitle} />
            
             ))}
           </div>
@@ -65,7 +65,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.magic.map((movie) => (
-               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} overview={movie.overview} voteAverage={movie.vote_average} setTitle={setTitle}/>
             ))}
           </div>
         </div>
@@ -80,7 +80,7 @@ const MovieContainer = () => {
           </p>
           <div className="movieList">
             {movies.recommended.map((movie) => (
-               <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} />
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} overview={movie.overview} voteAverage={movie.vote_average} setTitle={setTitle} />
             ))}
           </div>
         </div>

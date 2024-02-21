@@ -2,11 +2,21 @@ import React from "react";
 import "./Movie.css";
 import Placeholder from "./images/placeholder-250x370.svg";
 
-const Movie = ({ title, overview, posterPath, releaseDate }) => {
+const Movie = ({ title, overview, posterPath, releaseDate, backdropPath, voteAverage, setTitle }) => {
   // Log data to console
+  
   const handleClick = () => {
-    title ? console.log("DATA:", title) : console.log("Nothing");
-  };
+    const movieData = {
+      title,
+      overview,
+      backdropPath,
+      releaseDate,
+      voteAverage
+    };
+    
+    setTitle(movieData);
+    console.log(movieData);
+};
 
   return (
     <div className="singleMovie movieCard" onClick={handleClick}>
