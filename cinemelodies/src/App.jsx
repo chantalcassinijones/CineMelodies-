@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+ import { BrowserRouter as Router, Route, Routes, useNavigate} from 'react-router-dom';
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import MovieContainer from "./components/MovieContainer/MovieContainer";
 import SearchResultsPage from "./components/SearchResultsPage/SearchResultsPage";
+
 
 function App() {
   // Store movie results to state
@@ -15,18 +17,25 @@ function App() {
   };
 
   return (
+    <Router>
     <div className="app-container">
       <header>
-        <Header onSearchResults={handleResults} />
-         </header>
+      <Header onSearchResults={handleResults} />
+       </header>
+      
       <main>
-        {/* Condition rendering based on movieResults state */}
-        {!movieResults ? <SearchResultsPage movies={movieResults} /> : <MovieContainer />}
+        <Routes>
+          <Route path="/" element={<MovieContainer />} />
+        <Route path="/searchResultsPage" element={<SearchResultsPage movies={movieResults} />} />
+        <Route path="/movieContainer" element={<MovieContainer />} />
+        </Routes>
              </main>
+             
       <footer>
         <Footer />
       </footer>
-    </div>
+      </div>
+      </Router>
   );
 }
 
