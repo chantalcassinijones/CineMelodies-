@@ -5,13 +5,16 @@ import "../MovieContainer/MovieContainer.css";
 
 // Render results to container
 const SearchResultsPage = ({ movies }) => {
+    // Return only first 8 movies and
+    const selectedMovies = movies.sort((a, b) => b.popularity - a.popularity).slice(0, 8);
+
   return (
     <div className="moviesContainer">
          
           {movies.length === 0 ? <h2 className="noresults-h2">No results found! Why not try a different query?</h2> : (<>
                <h2 className="text-left text-2xl font-bold">Top search results</h2>
               <div className="movieList">
-                  {movies.map((movie) => (
+                  {selectedMovies.map((movie) => (
                       <Movie
                           key={movie.id}
                           title={movie.title}
