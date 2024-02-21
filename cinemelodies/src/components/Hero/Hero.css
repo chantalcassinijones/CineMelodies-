@@ -2,35 +2,45 @@
 /* This can be changed/added to with Tailwind */
 
 .hero-container {
-    padding-bottom: 30px;
-    background: radial-gradient(circle at 50% 80%, #189a17, #199616, #1a8c14, #1a7f11, #1a720e, #19690d, #19650c);
+  padding-bottom: 30px;
 }
 
 input {
-    border: 1px solid black !important;
-    height: 35px;
-    padding: 5px;
-    width: 400px;
+  height: 38px;
+  padding: 8px;
+  width: 420px;
+  box-sizing: border-box;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    height: 35px;
-   background-color: rgb(157, 147, 16) !important;
-   color: white !important;
-   text-shadow: 1px 1px black;
-   font-weight: 600 !important;
-    margin-left: 10px;
-    width: 75px;
-    border: 1px solid rgb(92, 90, 27);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  height: 40px;
+  background-color: rgb(215, 203, 43) !important;
+  color: white !important;
+  text-shadow: 1px 1px black;
+  font-weight: 600 !important;
+  margin-left: 10px;
+  width: 75px;
+  border: 1px solid rgb(148, 144, 28);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
+
+button:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-color: #141313;
+  background-color: rgb(200, 189, 33) !important;
+  border: 2px solid rgba(142, 146, 27, 0.38);
+}
+
 .hero-text {
-    color: rgb(57, 75, 26);
-    
+  color: rgb(57, 75, 26) !important;
 }
 
 h1 {
-    color: rgba(255, 255, 255, 0.895);
-    text-shadow: 1px 1px black;
+  color: rgba(255, 255, 255, 0.895);
+  text-shadow: 1px 1px black;
 }
