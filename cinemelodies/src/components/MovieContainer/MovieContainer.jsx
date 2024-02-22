@@ -4,6 +4,7 @@ import Movie from "../Movie/Movie";
 import "./MovieContainer.css";
 
 const MovieContainer = ({ setTitle }) => {
+  console.log("movieContainer:", setTitle)
   const [movies, setMovies] = useState({
     comedy: [],
     fantasy: [],
