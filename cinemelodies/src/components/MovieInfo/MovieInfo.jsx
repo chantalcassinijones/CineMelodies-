@@ -4,18 +4,22 @@ import { useLocation } from "react-router-dom";
 import "./MovieInfo.css";
 
 const MovieInfo = (props) => {
+  
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-
-  const title = params.get("title");
-  const overview = params.get("overview");
-  const releaseDate = params.get("releaseDate");
-  const backdropPath = params.get("backdropPath");
-  const voteAverage = params.get("voteAverage");
-
+  
+  const title = params.get('title');
+  const overview = params.get('overview');
+  const releaseDate = params.get('releaseDate');
+  const backdropPath = params.get('backdropPath');
+  const voteAverage = params.get('voteAverage');
+  
   return (
     <>
-      <div className="movieInfo-container">
+      <div
+        className="movieInfo-container"
+      
+      >
         <div
           className="movieInfo-container--header"
           style={{
@@ -35,8 +39,9 @@ const MovieInfo = (props) => {
               </li>
               <li>
                 <strong>Average rating:</strong>{" "}
-                {parseInt(voteAverage).toFixed(1)}
+              {parseInt(voteAverage).toFixed(1)}
               </li>
+                
             </ul>
           </div>
         </div>
@@ -46,3 +51,4 @@ const MovieInfo = (props) => {
   );
 };
 export default MovieInfo;
+
