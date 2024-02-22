@@ -7,13 +7,9 @@ The CineMelodies application is crafted to empower users with the ability to sea
 
 ## Screenshots
 ![Screenshot](./cinemelodies/Images/Screenshot%201.png)
-![Screenshot](./cinemelodies/Images/screenshot%202.png)
 ![Screenshot](./cinemelodies/Images/screenshot%203.png)
 ![Screenshot](./cinemelodies/Images/Screenshot4.png)
 
-
-## Installation
-To install,
 
 ## Usage 
 On the homepage, you have the option to explore a curated collection of pre-populated movies categorized by genres. By clicking on individual cards, you can access detailed information about the movie, including soundtrack previews. Additionally, you can search for your favorite movie. Upon pressing the "Go" button, you will be directed to another page displaying your search results. Clicking on the preferred card provides further details about the movie and previews of the soundtrack.
@@ -45,6 +41,6 @@ On the homepage, you have the option to explore a curated collection of pre-popu
 [Nodejs](https://nodejs.org/en),
 
 
-## License
+
 
 
