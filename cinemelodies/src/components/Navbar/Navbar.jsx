@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Navbar.css"
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
-            <a href="#" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">HOME</a>
+            <Link to="/movieContainer" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">HOME</Link>
           </div>
         </div>
       </div>

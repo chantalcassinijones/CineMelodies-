@@ -14,8 +14,8 @@ const Hero = ({ onSearchResults }) => {
   return (
     
    <div className="hero-container text-center">
-     <h1 className="font-bold tracking-tight pt-5 sm:text-4xl">
-     Your guide to the world of sounds and movies
+     <h1 className="font-bold tracking-tight pt-5 sm:text-3xl md:text-1xl">
+     Your spotlight on the world of sounds and movies
      </h1>
      <div className="mt-10 flex items-center justify-center gap-x-6">
       <MovieSearch onSearchResults={onSearchResults} />

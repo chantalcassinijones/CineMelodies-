@@ -3,4 +3,5 @@
     background: radial-gradient(circle at 50% 80%, #189a17, #199616, #1a8c14, #1a7f11, #1a720e, #19690d, #19650c);
     height: 250px;
     border-bottom: 4px solid rgb(215, 203, 43) !important;
+    margin-bottom: 20px;
 }

@@ -5,9 +5,9 @@ import "../MovieContainer/MovieContainer.css";
 
 // Render results to container
 const SearchResultsPage = ({ movies }) => {
-    // Return only first 8 movies and
   
-  const selectedMovies = movies? movies.sort((a, b) => b.popularity - a.popularity).slice(0, 8): "";
+  // Return only first 8 movies with highest user votes
+    const selectedMovies = movies? movies.sort((a, b) => b.popularity - a.popularity).slice(0, 8): "";
       
 
   return (
