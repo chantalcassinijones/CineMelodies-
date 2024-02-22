@@ -107,13 +107,13 @@ const SoundtrackInfo = (props) => {
             </li>
             <li>{soundtrackData.popularity}</li>
             <li className="icon-li">
-                          <img src={SpotifyIcon} width="20px"/>
+                          <img src={SpotifyIcon} alt="spotify icon" width="20px"/>
                 <a href={soundtrackData.url} target="_blank"> Spotify
                </a>
                
             </li>
             <li className="icon-li">
-              <img src={AmzIcon} width="20px"/>
+              <img src={AmzIcon} width="20px" alt="amazon icon"/>
               <a
                 href={`https://www.amazon.co.uk/s?k=${soundtrackData.title}`}
                 target="_blank"
@@ -129,7 +129,7 @@ const SoundtrackInfo = (props) => {
           soundtrackData.trackInfo.map((track) => (
             
             <div className="track-preview">
-              {track.name} -{track.artists[0].name}
+              <strong>{track.name}</strong> - {track.artists[0].name}
               {track.preview_url ? <ReactPlayer
                 url={track.preview_url}
                 key={track.id}

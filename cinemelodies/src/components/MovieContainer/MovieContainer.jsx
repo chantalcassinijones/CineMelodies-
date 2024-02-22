@@ -29,9 +29,9 @@ const MovieContainer = ({ setTitle }) => {
     <>
       <div className="moviesContainer">
         <div>
-          <h2 className="text-left text-2xl font-bold mb-4">Comedy</h2>
-          <p className="moviesContainer-description text-left">
-            Top comedy movies that sound as good as they look
+          <h2 className="text-left text-2xl font-bold">Comedy</h2>
+          <p className="moviesContainer-description">
+            Top comedy movies that are as fun to listen to as they are to watch
           </p>
           <div className="movieList">
             {movies.comedy.map((movie) => (
@@ -43,8 +43,8 @@ const MovieContainer = ({ setTitle }) => {
 
       <div className="moviesContainer">
         <div>
-          <h2 className="text-left text-2xl font-bold mb-4">Fantasy</h2>
-          <p className="moviesContainer-description text-left">
+          <h2 className="text-left text-2xl font-bold">Fantasy</h2>
+          <p className="moviesContainer-description">
             Enter a world of fantastical esapism with one of these otherworldy
             classics
           </p>
@@ -60,9 +60,9 @@ const MovieContainer = ({ setTitle }) => {
       
       <div className="moviesContainer">
         <div>
-          <h2 className="text-left text-2xl font-bold mb-4">Magic</h2>
-          <p className="moviesContainer-description text-left">
-            Manifest some movie magic
+          <h2 className="text-left text-2xl font-bold">Magic</h2>
+          <p className="moviesContainer-description">
+            Embark on spellbinding journeys with one of these magical adventures
           </p>
           <div className="movieList">
             {movies.magic.map((movie) => (
@@ -74,8 +74,8 @@ const MovieContainer = ({ setTitle }) => {
 
       <div className="moviesContainer">
         <div>
-          <h2 className="text-left text-2xl font-bold mb-4">Team Favourites</h2>
-          <p className="moviesContainer-description text-left">
+          <h2 className="text-left text-2xl font-bold">Team Favourites</h2>
+          <p className="moviesContainer-description">
             A curated collection of the CineMelodies team's favourites - all
             with exceptional soundtracks.
           </p>

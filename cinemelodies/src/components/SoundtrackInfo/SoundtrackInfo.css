@@ -54,6 +54,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-end;
   padding: 7px 0;
   color: black !important;
   border-top: 1px solid lightgray;
