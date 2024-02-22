@@ -35,7 +35,7 @@ const MovieContainer = ({ setTitle }) => {
           </p>
           <div className="movieList">
             {movies.comedy.map((movie) => (
-              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} voteAverage={movie.vote_average} setTitle={setTitle} />
+              <Movie key={movie.id} title={movie.title} releaseDate={movie.release_date} posterPath={movie.poster_path} backdropPath={movie.backdrop_path} overview={movie.overview}  voteAverage={movie.vote_average} setTitle={setTitle} />
             ))}
           </div>
         </div>
