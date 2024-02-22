@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
 import "./SoundtrackInfo.css";
+import SpotifyIcon from "./icon-spotify.svg.png";
+import AmzIcon from "./icon-amz.svg.png";
 
 const URL = "https://api.spotify.com/v1/search"; // /Search endpoint (to find albums)
 const clientId = "d8cbb49c40dd440a87057c10244e3f9d";
@@ -100,21 +102,22 @@ const SoundtrackInfo = (props) => {
             <li>
               <strong>Released:</strong> {soundtrackData.released}
             </li>
-            <li>
+            <li className="tracks-li">
               <strong>Total tracks:</strong> {soundtrackData.tracks}
             </li>
             <li>{soundtrackData.popularity}</li>
-            <li>
-              <a href={soundtrackData.url} target="_blank">
-                [icon] Spotify Page
-              </a>
+            <li className="icon-li">
+                          <img src={SpotifyIcon} width="20px"/>
+                <a href={soundtrackData.url} target="_blank"> Spotify
+               </a>
+               
             </li>
-            <li>
+            <li className="icon-li">
+              <img src={AmzIcon} width="20px"/>
               <a
                 href={`https://www.amazon.co.uk/s?k=${soundtrackData.title}`}
                 target="_blank"
-              >
-                [icon] Buy on Amazon
+              > Amazon
               </a>
             </li>
           </ul>
@@ -130,7 +133,7 @@ const SoundtrackInfo = (props) => {
               {track.preview_url ? <ReactPlayer
                 url={track.preview_url}
                 key={track.id}
-                width="400px"
+                width="380px"
                 height="40px"
                 controls={true}
               /> : <span className="no-preview">No preview available</span>}

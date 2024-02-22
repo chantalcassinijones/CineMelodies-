@@ -18,10 +18,11 @@ function App() {
   const [movieResults, setMovieResults] = useState([]);
   const [title, setTitle] = useState({});
 
-  const updateTitle = (newTitle) => {
-    setTitle(newTitle);
-  };
+  // const updateTitle = (newTitle) => {
+  //   setTitle(newTitle);
+  // };
 
+  // Handle movie results
   const handleResults = (results) => {
     setMovieResults(results);
   };

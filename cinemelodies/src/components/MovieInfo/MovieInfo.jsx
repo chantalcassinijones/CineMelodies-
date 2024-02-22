@@ -7,7 +7,7 @@ const MovieInfo = (props) => {
   
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-  
+  // params to values using useLocation
   const title = params.get('title');
   const overview = params.get('overview');
   const releaseDate = params.get('releaseDate');
@@ -31,11 +31,11 @@ const MovieInfo = (props) => {
             <h3 className="text-center">{title || "Error"}</h3>
             <ul>
               <li>
-                <strong>Released:</strong> {releaseDate}
+                <strong>Released:</strong> {releaseDate ? releaseDate : "N/A"}
               </li>
 
               <li>
-                <strong>Summary:</strong> {overview}
+                <strong>Summary:</strong> {overview ? overview : "Not available"}
               </li>
               <li>
                 <strong>Average rating:</strong>{" "}
