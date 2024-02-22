@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
-            <Link to="/movieContainer" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">HOME</Link>
+            <Link to="/movieContainer" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">HOME / RECOMMENDED</Link>
           </div>
         </div>
       </div>

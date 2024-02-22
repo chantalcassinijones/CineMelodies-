@@ -10,7 +10,15 @@
 }
 
 .moviesContainer h2 {
-  margin: 0px;
+  font-size: 1.5rem !important;
+  width: 50%;
+  margin-left: 12px;
+}
+
+.moviesContainer-description {
+  
+  margin: 0 auto;
+  width: 90%;
 }
 
 .moviesContainer:last-child {
@@ -28,7 +36,22 @@
   justify-content: center;
 }
 
-
 .noresults-h2 {
   font-size: 1.3rem !important;
+}
+
+/* For small screens */
+@media only screen and (max-width: 768px) {
+  .moviesContainer h2 {
+    margin: 0 auto;
+    width: 20%;
+  }
+
+  .moviesContainer-description {
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
