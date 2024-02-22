@@ -39,6 +39,9 @@ On the homepage, you have the option to explore a curated collection of pre-popu
 [Tailwind](https://tailwindcss.com/),
 [Spotify](https://developer.spotify.com/documentation/web-api),
 [Nodejs](https://nodejs.org/en),
+[`useLocation`hooks](https://reactrouter.com/en/main/hooks/use-location),
+[`useNavigate` hooks](https://reactrouter.com/en/main/hooks/use-navigate),
+
 
 
 
