@@ -9,6 +9,8 @@ The CineMelodies application is crafted to empower users with the ability to sea
 ![Screenshot](./cinemelodies/Images/Screenshot%201.png)
 ![Screenshot](./cinemelodies/Images/screenshot%202.png)
 ![Screenshot](./cinemelodies/Images/screenshot%203.png)
+![Screenshot](./cinemelodies/Images/Screenshot4.png)
+
 
 ## Installation
 To install,
