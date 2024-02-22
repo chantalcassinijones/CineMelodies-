@@ -1,11 +1,14 @@
 import React from "react";
 import "./Movie.css";
 import Placeholder from "./images/placeholder-250x370.svg";
+import { useNavigate } from "react-router-dom";
+
 
 const Movie = ({ title, overview, posterPath, releaseDate, backdropPath, voteAverage, setTitle }) => {
-  // Log data to console
-  
+  const navigate = useNavigate();
+    
   const handleClick = () => {
+    
     const movieData = {
       title,
       overview,
@@ -14,9 +17,11 @@ const Movie = ({ title, overview, posterPath, releaseDate, backdropPath, voteAve
       voteAverage
     };
     
-    setTitle(movieData);
-    console.log(movieData);
-};
+    navigate(`/movieInfo?&title=${title}&overview=${overview}&releaseDate=${releaseDate}&backdropPath=${backdropPath}&voteAverage=${voteAverage}`);
+    
+    //setTitle(movieData);
+ 
+  };
 
   return (
     <div className="singleMovie movieCard" onClick={handleClick}>

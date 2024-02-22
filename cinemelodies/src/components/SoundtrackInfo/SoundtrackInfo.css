@@ -61,9 +61,15 @@
   
   .track-preview {
      margin: 3px 5px; 
-  
+    }
+
+  .no-preview {
+    width: 400px;
+    height: 25px;
+    border: 1px solid lightgrey;
+    display: block;
+    border-radius: 20px;
   }
-  
   a:hover {
       text-decoration: underline;
   }
