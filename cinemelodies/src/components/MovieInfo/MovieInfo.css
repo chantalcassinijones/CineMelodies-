@@ -1,9 +1,10 @@
 .movieInfo-container {
-  width: 80%;
   max-width: 1280px;
+  width: 85%;
   margin: 0 auto;
-  border: 1px solid lightgrey;
   margin: 20px 0 40px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
 }
 
 .movieInfo-container--header {
