@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 import "./Hero.css";
-import MovieSearch from '../MovieSearch/MovieSearch';
+import MovieSearch from "../MovieSearch/MovieSearch";
 
 const Hero = ({ onSearchResults }) => {
   const [query, setQuery] = useState("");

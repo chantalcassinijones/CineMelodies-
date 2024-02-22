@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import MovieContainer from "./components/MovieContainer/MovieContainer";
 import SearchResultsPage from "./components/SearchResultsPage/SearchResultsPage";
@@ -17,10 +16,6 @@ function App() {
   // Store movie results to state
   const [movieResults, setMovieResults] = useState([]);
   const [title, setTitle] = useState({});
-
-  // const updateTitle = (newTitle) => {
-  //   setTitle(newTitle);
-  // };
 
   // Handle movie results
   const handleResults = (results) => {

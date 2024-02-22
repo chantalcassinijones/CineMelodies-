@@ -7,9 +7,9 @@ const fetchMovieData = async () => {
     const apiKey = "440ab038ef5ec7e52ca1c5eceae992aa";
     const movieIds = {
       comedy: [9427, 525, 9486, 546554],
-      fantasy: [120, 2493, 411, 259316],
-      magic: [1124, 671, 75656, 10439],
-      recommended: [88, 744, 75612, 824],
+      fantasy: [120, 57158, 118, 259316],
+      magic: [630, 671, 8204, 10439],
+      recommended: [88, 744, 75612, 771],
     };
 
     const movieCategories = Object.keys(movieIds);
