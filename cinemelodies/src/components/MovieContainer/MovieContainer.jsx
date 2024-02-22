@@ -77,7 +77,7 @@ const MovieContainer = ({ setTitle }) => {
           <h2 className="text-left text-2xl font-bold">Team Favourites</h2>
           <p className="moviesContainer-description">
             A curated collection of the CineMelodies team's favourites - all
-            with exceptional soundtracks.
+            with exceptional soundtracks
           </p>
           <div className="movieList">
             {movies.recommended.map((movie) => (
