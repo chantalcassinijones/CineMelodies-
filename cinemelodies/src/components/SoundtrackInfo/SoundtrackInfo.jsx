@@ -50,7 +50,7 @@ const SoundtrackInfo = (props) => {
           },
         });
         // Assign a shortcut for /DRY
-        const firstAlbum = response.data.albums.items[0];
+          const firstAlbum = response.data.albums.items[0];
         // Get the album tracks
         const id = firstAlbum.id;
         const getTracks = await axios.get(
@@ -61,9 +61,9 @@ const SoundtrackInfo = (props) => {
             },
           }
         );
-
-          // Set fetched data to state
-          if (firstAlbum) {
+        console.log(getTracks);
+        // Set first album data  to state
+        if (firstAlbum) {
           setSoundtrackData({
             title: firstAlbum.name,
             img: firstAlbum.images[1].url,
@@ -71,10 +71,10 @@ const SoundtrackInfo = (props) => {
             released: firstAlbum.release_date,
             tracks: firstAlbum.total_tracks,
             url: firstAlbum.external_urls.spotify,
-             id: firstAlbum.id,
-            trackInfo: getTracks.data.tracks.items,
+            id: firstAlbum.id,
+            trackInfo: getTracks.data.tracks.items.slice(0, 8),
           });
-                  } else {
+        } else {
           console.log("No album found");
         }
       } catch (error) {
@@ -84,7 +84,6 @@ const SoundtrackInfo = (props) => {
 
     fetchData();
   }, [token]);
-
 
 
   return (
@@ -107,7 +106,7 @@ const SoundtrackInfo = (props) => {
             <li>{soundtrackData.popularity}</li>
             <li>
               <a href={soundtrackData.url} target="_blank">
-               [icon] Spotify Page
+                [icon] Spotify Page
               </a>
             </li>
             <li>
@@ -115,17 +114,28 @@ const SoundtrackInfo = (props) => {
                 href={`https://www.amazon.co.uk/s?k=${soundtrackData.title}`}
                 target="_blank"
               >
-               [icon] Buy on Amazon
+                [icon] Buy on Amazon
               </a>
             </li>
           </ul>
-              </div>
-          </div>
-          <h2>Track Previews</h2>
-          <div className="previews-container">
-          {soundtrackData.trackInfo && soundtrackData.trackInfo.map(track => (
-              <div className="track-preview">{track.name} - <ReactPlayer url={track.preview_url} key={track.id} width="400px" height="40px" controls={true} /></div>
-    ))}
+        </div>
+      </div>
+      <h2>Track Previews</h2>
+      <div className="previews-container">
+        {soundtrackData.trackInfo &&
+          soundtrackData.trackInfo.map((track) => (
+            
+            <div className="track-preview">
+              {track.name} -{track.artists[0].name}
+              {track.preview_url ? <ReactPlayer
+                url={track.preview_url}
+                key={track.id}
+                width="400px"
+                height="40px"
+                controls={true}
+              /> : <span className="no-preview">No preview available</span>}
+            </div>
+          ))}
       </div>
     </div>
   );
