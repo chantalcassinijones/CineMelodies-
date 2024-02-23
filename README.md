@@ -1,21 +1,32 @@
 # CineMelodies App
 
 ## Introduction
-The CineMelodies application is crafted to empower users with the ability to search for their favorite movie soundtracks and delve into comprehensive details about beloved movies.
+The CineMelodies application is crafted to empower users with the ability to explore information on their favourite - and new favourite - movies, providing not only images and core movie information, but also comprehensive soundtrack information including playable audio previews. CineMelodies provides a comprehensive resource on not only the movies, but the sounds behind the movies.
 
 
 ## Screenshots
-![Screenshot](./cinemelodies/Images/Screenshot%201.png)
-![Screenshot](./cinemelodies/Images/screenshot%203.png)
-![Screenshot](./cinemelodies/Images/Screenshot4.png)
+#### Home screen
+
+<img src="./cinemelodies/Images/screen-home.png" width="400px"/>
+
+#### Search screen
+
+<img src="./cinemelodies/Images/screen-search.png" width="400px"/>
+
+#### Search item result screen
+
+<img src="./cinemelodies/Images/screen-audio.png" width="400px" />
 
 
 ## Utilization
-On the homepage, you have the option to explore a curated collection of pre-populated movies categorized by genres. By clicking on individual cards, you can access detailed information about the movie, including soundtrack previews. Additionally, you can search for your favorite movie. Upon pressing the "Go" button, you will be directed to another page displaying your search results. Clicking on the preferred card provides further details about the movie and previews of the soundtrack.
+On the homepage, you have the option to explore a curated collection of pre-populated movies categorized by genres. By clicking on individual cards, you can access detailed audio/video information about the movie, including soundtrack previews. Additionally, you can search for your favorite movie - upon pressing the "Go" button, you will be directed to another page displaying your search results. Clicking on the preferred card provides further details about the movie and previews of the soundtrack.
 
 
 ## Live demo
-[Website link>](https://cinemelodies.netlify.app/)
+[Website link](https://cinemelodies.netlify.app/)
+
+## Video demo
+[Video demo (note: slightly outdated)](https://jonathon10k.github.io/module12-generated-profile/cinemelodies-demo.mp4)
 
 
 ## Creators
@@ -28,19 +39,18 @@ On the homepage, you have the option to explore a curated collection of pre-popu
 - [Rich](https://github.com/Rich90U)
 
 
-## Acknowledgements
-
+## Technologies
+#### New = New technology
 [Figma](https://www.figma.com),
 [Axios](https://axios-http.com/docs/intro),
 [React](https://react.dev/),
 [Slack](https://slack.com/intl/en-gb),
-[TMBD](https://www.themoviedb.org/?language=en-GB),
-[Tailwind](https://tailwindcss.com/),
+[TMDb](https://www.themoviedb.org/?language=en-GB),
+[Tailwind[New]](https://tailwindcss.com/),
 [Spotify](https://developer.spotify.com/documentation/web-api),
 [Nodejs](https://nodejs.org/en),
-[`useLocation`](https://reactrouter.com/en/main/hooks/use-location),
-[`useNavigate`](https://reactrouter.com/en/main/hooks/use-navigate),
-[Hooks](https://legacy.reactjs.org/docs/hooks-overview.html),
+[Hooks (including useNavigate & useLocation[New])](https://legacy.reactjs.org/docs/hooks-overview.html),
+[React-Player package[New]](https://www.npmjs.com/package/react-player)
 
 
 
