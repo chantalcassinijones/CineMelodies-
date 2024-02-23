@@ -3,6 +3,7 @@ import fetchMovieData from "../../Api";
 import Movie from "../Movie/Movie";
 import "./MovieContainer.css";
 
+// Component to render pre-designated movies 
 const MovieContainer = ({ setTitle }) => {
   console.log("movieContainer:", setTitle)
   const [movies, setMovies] = useState({
