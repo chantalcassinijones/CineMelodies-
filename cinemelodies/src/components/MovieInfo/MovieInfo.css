@@ -61,3 +61,9 @@ h5 {
 img {
   margin: 10px;
 }
+
+.movieInfo-homelink {
+ text-decoration: underline;
+      margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
