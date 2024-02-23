@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 const MovieSearch = ({ onSearchResults }) => {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
     if (!query) {
-      alert("Please enter a search query!")
+      alert("Please enter a search query!");
     } else {
       axios
         .get(
@@ -19,8 +19,9 @@ const MovieSearch = ({ onSearchResults }) => {
           const results = response.data.results;
           setMovies(results);
           onSearchResults(results);
-          console.log(results)
-          navigate("/searchResultsPage")
+          console.log(results);
+          setQuery(""); // Reset value on submit
+          navigate("/searchResultsPage");
         })
         .catch((error) => {
           console.log(error);
@@ -29,9 +30,8 @@ const MovieSearch = ({ onSearchResults }) => {
   };
 
   useEffect(() => {
-   
-    console.log("movies:", movies)
-  }, [movies])
+    console.log("movies:", movies);
+  }, [movies]);
 
   return (
     <div>

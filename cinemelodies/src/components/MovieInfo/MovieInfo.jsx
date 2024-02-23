@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import SoundtrackInfo from "../SoundtrackInfo/SoundtrackInfo";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./MovieInfo.css";
 
+// Component renders full movie/soundtrack data
 const MovieInfo = (props) => {
   
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-  // params to values using useLocation
+  // Get values from params using useLocation
   const title = params.get('title');
   const overview = params.get('overview');
   const releaseDate = params.get('releaseDate');
@@ -47,6 +49,7 @@ const MovieInfo = (props) => {
         </div>
         <SoundtrackInfo movie={title} />
       </div>
+      <Link to="/movieContainer" className="movieInfo-homelink text-black hover:bg-gray-700 hover:text-white ">Home</Link>
     </>
   );
 };
