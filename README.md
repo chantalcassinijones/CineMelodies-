@@ -7,15 +7,15 @@ The CineMelodies application is crafted to empower users with the ability to exp
 ## Screenshots
 #### Home screen
 
-<img src="./cinemelodies/Images/screen-home.png" width="400px"/>
+<img src="./cinemelodies/Images/screen-home.png" width="800px"/>
 
 #### Search screen
 
-<img src="./cinemelodies/Images/screen-search.png" width="400px"/>
+<img src="./cinemelodies/Images/screen-search.png" width="800px"/>
 
 #### Search item result screen
 
-<img src="./cinemelodies/Images/screen-audio.png" width="400px" />
+<img src="./cinemelodies/Images/screen-audio.png" width="800px" />
 
 
 ## Utilization
